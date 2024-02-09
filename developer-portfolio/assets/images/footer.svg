@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1280px" height="720px" viewBox="0 0 1280 720" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M1280 0L1280 0L1280 720L0 720L0 0L1280 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="HD">
+    <path d="M1280 0L1280 0L1280 720L0 720L0 0L1280 0Z" id="HD" fill="#FFFFFF" stroke="none" />
+    <path d="M0 153L77.5 284.016L171.806 238.232L299.5 579.076C299.5 579.076 615.625 604.675 871.5 496C1127.38 387.325 1280 153 1280 153L1280 720L0 720L0 153Z" id="Rectángulo-2" fill="#686868" fill-opacity="0.101960786" fill-rule="evenodd" stroke="none" clip-path="url(#clip_1)" />
+    <path d="M0 272L61.5213 339.2L154.482 301.867L273.5 605.5C273.5 605.5 591.668 625.867 847.543 540C1103.42 454.133 1280 272 1280 272L1280 720L847.543 720L0 720L0 272Z" id="Rectángulo-1" fill="#686868" fill-opacity="0.050980393" fill-rule="evenodd" stroke="none" clip-path="url(#clip_1)" />
+    <path d="M0 360L61.5213 414L126.5 360L256.5 636C256.5 636 591.625 647 847.5 578C1103.38 509 1280 360 1280 360L1280 720L0 720L0 360Z" id="Rectángulo-0" fill="#FCFCFC" fill-opacity="0.49803922" fill-rule="evenodd" stroke="none" clip-path="url(#clip_1)" />
+  </g>
+</svg>

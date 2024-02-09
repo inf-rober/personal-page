@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* Variables */
+
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #001b2e;
+  --secondary-color: #294c60;
+  --primary-shadow: #adb6c4;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+/* Variables fin */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Reinicio */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Estilos para la barra de navegación */
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  color: var(--primary-color);
+}
+
+nav li a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+nav ul li {
+  font-weight: var(--bolder-font);
+}
+
+/* Estilos para el munú hamburguesa cuando se vea en otros dispositivos (teléfonos, tablets) */
+
+.menu-hamburguesa {
+  color: black;
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Estilos primera sección  */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+}
+
+.hero img {
+  height: 37.5rem;
+  width: 37.5rem;
+}
+
+.bio {
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+
+/* Estilos segunda sección */
+
+.mas-sobre {
+  background-color: var(--bg-color);
+  padding: 1rem 6rem;
+}
+
+.mas-sobre h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.mas-sobre p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+  text-align: justify;
+}
+
+/* Estilos sección habilidades */
+
+.habilidades {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.encabezado-habilidad {
+  margin-bottom: 1rem;
+}
+
+.contenedor-habilidad img {
+  padding: 1.25rem;
+}
+
+.icono {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.tarjeta-icono {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Estilos sección proyectos */
+
+.proyectos {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.contenedor-de-proyectos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-de-proyectos {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para elementos de Linkedin y Github */
+
+.sociales {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+}
+
+.socicon {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Propiedad para que la imagen del footer tome el 100% del ancho de la pantalla utilizando la unidad % */
+
+
+footer > div > img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+footer > div > p {
+  margin-top: 51%;
+  position: absolute;
+  font-family: 'Rubik';
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+}
+
+/* Propiedades para icono de flecha hacia arriba */
+
+.desplazarse-hacia-arriba {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+/* !Consulta de medios (Propiedades responsive)*/
+
+@media screen and (max-width: 720px) {
+  nav {
+    padding: 1.5rem 1rem;
+  }
+
+  /* *Propiedades para el menú de hamburguesa */
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+  nav ul li {
+    margin: 8px;
+  }
+
+  .menu-hamburguesa {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+
+  /* *Propiedades para la sección del hero  */
+
+  .hero {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero img {
+    height: 37.5rem;
+    width: 30rem;
+  }
+
+  .bio {
+    margin-top: -7rem;
+    width: 20.5rem;
+  }
+
+  /* *Propiedades para la sección más sobre mi  */
+
+  .mas-sobre {
+    margin-top: 2rem;
+    padding: 1rem 3.5rem;
+    background-color: var(--bg-color);
+  }
+
+  .mas-sobre > h2 {
+    text-align: center;
+  }
+
+  .mas-sobre > p {
+    text-align: justify; 
+  }
+
+  /* 
+    *Propiedades para los íconos 
+    *Sin utilzar  
+  */
+  .icono {
+    width: 0rem;
+    height: 0rem;
+  }
+
+  /* *Proyectos */
+  .contenedor-proyectos {
+    flex-direction: column;
+  }
+
+  .contenedor-proyecto {
+    width: 20.875rem;
+  }
+
+}
+
+/* !Consulta de medios para ocultar el menú de hamburguesa */
+
+@media screen and (min-width: 721px) {
+  .menu-hamburguesa {
+    display: none;
+  }
+}

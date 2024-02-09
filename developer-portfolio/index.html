@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Temporal para arreglar error favicon.ico o quizás no >:( -->
+  <link rel="shortcut icon" href="#">
+
+  <!--Estilos CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Animaciones CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+  <title>Roberto Santibáñez</title>
+</head>
+
+<body>
+  <!-- Barra de Navegación -->
+  <nav>
+    <h1>Roberto Orlando Santibáñez Muñoz</h1>
+    <ul class="navegacion">
+      <li><a href="#sobremi" class="nav-link">Acerca de Mí</a></li>
+      <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+      <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+    </ul>
+    <button class="menu-hamburguesa" id="burger-menu">
+      <ion-icon class="barras" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
+
+  <!-- Sección Hero  -->
+  <section class="hero" id="sobremi">
+    <img src="assets/images/notion_avatar.svg" alt="jane-doe" loading="lazy" class="hero-img" />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-titulo">Sobre Mí</h2>
+      <p class="bio-texto">
+        Soy Ingeniero Informático del Instituto Profesional Santo Tomás y trato constantemente mejorar mis habilidades tecnológicas.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sobre Mí -->
+  <section class="mas-sobre">
+    <h2>Más sobre mí</h2>
+    <p class="mas-sobre-p">
+      Soy Chileno y Valdiviano, no soy precisamente un ávido lector de novelas, pero cuando lo hago me la paso muy bien. 
+      Trato de la mejor forma que me es posible abordar distintas tecnologías... 
+      y he aprendido a valorar enormemente mi tiempo y el de los demás.</p>
+  </section>
+
+  <!-- Sección Habilidades -->
+  <section class="habilidades">
+    <h2 class="header-habilidadr" >Tecnologías</h2>
+
+    <div class="contenedor-habilidades">
+      <div class="first-set animate__animated animate__pulse">
+        <img class="tarjeta-icono" data-toggle="tooltip" title="Python" src="assets/icons/icons8-python.svg" alt=""
+          loading="lazy" class="icon icon-card" />
+        <img class="tarjeta-icono" data-toggle="tooltip" title="HTML" src="assets/icons/icons8-html.svg" alt=""
+          loading="lazy" class="icon icon-card" />
+        <img class="tarjeta-icono" data-toggle="tooltip" title="CSS" src="assets/icons/icons8-css.svg" alt=""
+          loading="lazy" class="icon icon-card" />
+      </div>
+
+      <div class="second-set animate__animated animate__pulse">
+        <img class="tarjeta-icono" data-toggle="tooltip" title="Bootstrap" src="assets/icons/icons8-bootstrap.svg"
+          alt="" loading="lazy" class="icon icon-card" />
+        <img class="tarjeta-icono" data-toggle="tooltip" title="Flutter" src="assets/icons/icons8-flutter.svg" alt=""
+          loading="lazy" class="icon icon-card" />
+        <img class="tarjeta-icono" data-toggle="tooltip" title="Dart" src="assets/icons/icons8-dardo.svg" alt=""
+          loading="lazy" class="icon icon-card" />
+      </div>
+
+      <div class="third-set animate__animated animate__pulse">
+        <img class="tarjeta-icono" data-toggle="tooltip" title="Git" src="assets/icons/icons8-git.svg" alt=""
+          loading="lazy" class="icon icon-card" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Proyectos -->
+  <section class="proyectos" id="proyectos">
+    <h2 class="titulo-de-proyectos">Algunos de mis proyectos recientes</h2>
+    <div class="contenedor-de-proyectos">
+    <!-- todo: Crear los elementos cards para mostrar los proyectos (utilizando links a otras pestañas)  -->
+    </div>
+  </section>
+
+  <!-- Sección de redes sociales - Fijado a la derecha -->
+  <div class="sociales">
+    <a href="https://www.linkedin.com/in/inf-rosm" target="_blank"><img src="assets/icons/icons8-linkedin.svg" alt="Linkedin" loading="lazy"
+        class="socicon" /></a>
+    <a href="https://github.com/inf-rober" target="_blank"><img src="assets/icons/icons8-github.svg" alt="Github" class="socicon" /></a>
+  </div>
+
+  <!-- Vuelve al comienzo  -->
+  <i class="desplazarse-hacia-arriba" id="top-scroll">
+    <img src="assets/icons/icons8-flecha-arriba.png" class="socicon up-arrow" alt="desplazarse-hacia-arriba" />
+  </i>
+
+  <!-- Sección Footer  -->
+  <footer>
+    <div>
+      <img src="assets/images/footer.svg" alt="footer">
+      <p>Made with <ion-icon name="rainy-outline"></ion-icon> in Valdivia City</p>
+    </div>
+  </footer>
+
+  <!-- !Ionicons  -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  <!-- !JQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- !Website scripts -->
+  <script src="assets/js/index.js"></script>
+
+  <!-- !Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
